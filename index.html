@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMYK to Pantone Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CMYK to Pantone Converter</h1>
+        <div class="converter">
+            <div class="color-inputs">
+                <label for="cyan">Cyan (C):</label>
+                <input type="range" id="cyan" name="cyan" min="0" max="100" value="60">
+                <input type="number" id="cyanValue" name="cyanValue" min="0" max="100" value="60">
+                
+                <label for="magenta">Magenta (M):</label>
+                <input type="range" id="magenta" name="magenta" min="0" max="100" value="32">
+                <input type="number" id="magentaValue" name="magentaValue" min="0" max="100" value="32">
+                
+                <label for="yellow">Yellow (Y):</label>
+                <input type="range" id="yellow" name="yellow" min="0" max="100" value="0">
+                <input type="number" id="yellowValue" name="yellowValue" min="0" max="100" value="0">
+                
+                <label for="black">Black (K):</label>
+                <input type="range" id="black" name="black" min="0" max="100" value="51">
+                <input type="number" id="blackValue" name="blackValue" min="0" max="100" value="51">
+            </div>
+            <div class="color-display">
+                <div id="colorBox" class="color-box"></div>
+                <input type="color" id="colorPicker">
+                <input type="text" id="hexValue" name="hexValue" value="#33557d">
+            </div>
+        </div>
+        <div id="pantoneResults" class="pantone-results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
