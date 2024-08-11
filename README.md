@@ -28,4 +28,4 @@ A web-based tool that converts CMYK color values to their closest Pantone match.
 - Implement a database of Pantone colors for more accurate results.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the GPL License.
